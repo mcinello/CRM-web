@@ -2,17 +2,22 @@ html
 {
   margin: auto;
   font-family: 'Nimbus Sans', sans-serif;
-  /*line-height: 1.5;*/
   width: 70%;
+  height: 100%;
 }
 
 header
 {
-  color: white;
-  background-color: black;
+  display: block;
   text-align: center;
   font-size: 1.5em;
   font-weight: bold;
+}
+
+h1
+{
+  background-color: black;
+  color: white;
 }
 
 nav
@@ -33,15 +38,17 @@ a
 
 main
 {
-  vertical-align: middle
+  margin: auto;
   color: black;
+  font-size: 1.17em;
+  width: 95%;
 }
 
 h3
 {
   background-color: #FE756F;
   font-weight: normal;
-  padding: 10px;
+  padding: 15px;
 }
 
 h3 strong
@@ -49,17 +56,21 @@ h3 strong
   border-bottom: 3px solid #5AC9B6;
 }
 
+ul li
+{
+  list-style: none;
+}
+
 footer
 {
-
+  background-color: black;
+  color: white;
+  font-weight: lighter;
+  text-align: center;
 }
 
-h1
+p
 {
-
-}
-
-h4
-{
-
+  color: white;
+  background-color: black;
 }
