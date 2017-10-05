@@ -1,0 +1,65 @@
+html
+{
+  margin: auto;
+  font-family: 'Nimbus Sans', sans-serif;
+  /*line-height: 1.5;*/
+  width: 70%;
+}
+
+header
+{
+  color: white;
+  background-color: black;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav
+{
+  background-color: #D2D2D2;
+  margin: 1px, 0;
+  font-size: 1.2em;
+}
+
+a
+{
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+  border: 0.5px solid white;
+}
+
+main
+{
+  vertical-align: middle
+  color: black;
+}
+
+h3
+{
+  background-color: #FE756F;
+  font-weight: normal;
+  padding: 10px;
+}
+
+h3 strong
+{
+  border-bottom: 3px solid #5AC9B6;
+}
+
+footer
+{
+
+}
+
+h1
+{
+
+}
+
+h4
+{
+
+}
