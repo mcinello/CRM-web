@@ -60,26 +60,21 @@ h3 strong
   border-bottom: 3px solid #5AC9B6;
 }
 
-main ul
+main div
 {
-  list-style: none;
   background-color: #24E6CE;
-}
-
-main ul li
-{
   display: block;
   font-weight: bold;
   font-size: 1.35em;
 }
 
-main ul li p
+main div p
 {
   font-size: 1rem;
   font-weight: lighter;
 }
 
-main ul li a
+main div a
 {
   display: inline;
 }
