@@ -3,6 +3,7 @@
   <% @contacts.each do |contact| %>
   <div>
     <%= contact.full_name %>
+    <%= "(#{contact.email})" %>
     <p><a href="#">Edit</a> | <a href="#">Delete</a></p>
   </div>
     <% end %>

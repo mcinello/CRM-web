@@ -12,7 +12,7 @@ class Contact < ActiveRecord::Base
   field :note,       as: :text
 
   def full_name
-    "#{first_name} #{last_name} (#{email})"
+    "#{first_name} #{last_name}"
   end
 
 end
