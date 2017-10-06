@@ -23,6 +23,10 @@ get '/contacts/:id' do
   end
 end
 
+post '/contacts' do
+  puts params
+end
+
 get '/about' do
   erb :about
 end
