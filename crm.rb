@@ -14,6 +14,11 @@ get '/contacts/new' do
   erb :new
 end
 
+
+get '/about' do
+  erb :about
+end
+
 get '/contacts/:id' do
   @contact = Contact.find_by({id: params[:id].to_i})
   if @contact
@@ -33,6 +38,7 @@ post '/contacts' do
   redirect to('/contacts')
 end
 
+#update contact info
 get '/contacts/:id/edit' do
   @contact = Contact.find_by({id: params[:id].to_i})
   if @contact
@@ -58,8 +64,23 @@ put '/contacts/:id' do
   end
 end
 
-get '/about' do
-  erb :about
+get '/contacts/:id/delete' do
+  @contact = Contact.find_by({id: params[:id].to_i})
+  if @contact
+    erb :show_contact
+  else
+    raise Sinatra::NotFound
+  end
+end
+
+delete '/contacts/:id' do
+  @contact = Contact.find(params[:id].to_i)
+  if @contact
+    @contact.delete
+    redirect to('/contacts')
+  else
+    raise Sinatra::NotFound
+  end
 end
 
 after do
