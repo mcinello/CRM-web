@@ -1,9 +1,9 @@
-<h3>There are <strong>5</strong> contacts</h3>
+<h3>There are <strong><%= @contacts.length %></strong> contacts</h3>
 
   <% @contacts.each do |contact| %>
   <div>
     <a href="/contacts/<%= contact.id %>"><%= contact.full_name %></a>
     <%= "(#{contact.email})" %>
-    <p><a href="#">Edit</a> | <a href="#">Delete</a></p>
+    <p><a href="/contacts/<%= contact.id %>/edit">Edit</a> | <a href="#">Delete</a></p>
   </div>
     <% end %>
